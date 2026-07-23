@@ -9,7 +9,9 @@
     "db:push": "bunx --bun drizzle-kit push",
     "db:generate": "bunx --bun drizzle-kit generate",
     "db:migrate": "bunx --bun drizzle-kit migrate",
-    "db:studio": "bunx --bun drizzle-kit studio"
+    "db:studio": "bunx --bun drizzle-kit studio",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write"
   },
   "dependencies": {
     "@elysia/cors": "^1.4.2",
@@ -19,6 +21,7 @@
     "pg": "^8.22.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.5",
     "@types/pg": "^8.20.0",
     "bun-types": "latest",
     "drizzle-kit": "^1.0.0-rc.4",

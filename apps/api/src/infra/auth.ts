@@ -4,8 +4,8 @@ import { env } from "bun";
 import { db } from "./database";
 
 export const auth = betterAuth({
-  secret: env.BETTER_AUTH_SECRET,
-  database: drizzleAdapter(db, {
-    provider: "pg",
-  }),
+	secret: env.BETTER_AUTH_SECRET,
+	database: drizzleAdapter(db, {
+		provider: "pg",
+	}),
 });
