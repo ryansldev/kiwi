@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "services:up": "docker compose -f src/infra/compose.yaml up -d",
+    "services:down": "docker compose -f src/infra/compose.yaml down",
+    "db:push": "bunx --bun drizzle-kit push",
+    "db:generate": "bunx --bun drizzle-kit generate",
+    "db:migrate": "bunx --bun drizzle-kit migrate",
+    "db:studio": "bunx --bun drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^1.0.0-rc.4",
+    "elysia": "latest",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.0",
+    "bun-types": "latest",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.1"
+  },
+  "module": "src/index.js"
+}
