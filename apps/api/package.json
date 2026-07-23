@@ -12,6 +12,7 @@
     "db:studio": "bunx --bun drizzle-kit studio"
   },
   "dependencies": {
+    "@elysia/cors": "^1.4.2",
     "better-auth": "^1.6.24",
     "drizzle-orm": "^1.0.0-rc.4",
     "elysia": "latest",
