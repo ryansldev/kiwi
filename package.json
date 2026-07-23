@@ -1,0 +1,8 @@
+{
+  "name": "kiwi",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
