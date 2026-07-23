@@ -4,5 +4,14 @@
   "workspaces": [
     "packages/*",
     "apps/*"
-  ]
+  ],
+  "scripts": {
+    "dev": "bun run --filter './apps/*' dev",
+    "build": "bun run --filter './apps/*' build",
+    "start": "bun run --filter './apps/*' start",
+    "lint": "bun run --filter './apps/*' lint",
+    "lint:fix": "bun run --filter './apps/*' lint:fix",
+    "test": "bun run --filter './apps/*' test",
+    "test:watch": "bun run --filter './apps/*' test:watch"
+  }
 }
