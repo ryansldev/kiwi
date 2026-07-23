@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 
 const PUNCHLINES = [
@@ -138,12 +139,7 @@ export function ManifestoScroll({
     >
       <div className="sticky top-0 flex h-svh items-center">
         <div className="relative mx-auto w-full max-w-5xl px-6 sm:px-10 lg:px-12">
-          <div className="flex items-center gap-2.5">
-            <span aria-hidden className="text-3xl leading-none">
-              🥝
-            </span>
-            <span className="text-2xl font-bold tracking-tight">kiwi</span>
-          </div>
+          <Logo />
 
           <div className="relative mt-8 sm:mt-10">
             {PUNCHLINES.map((line, index) => {
