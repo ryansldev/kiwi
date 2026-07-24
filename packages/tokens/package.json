@@ -1,0 +1,8 @@
+{
+  "name": "@kiwi/tokens",
+  "private": true,
+  "exports": {
+    ".": "./dist/index.css",
+    "./index.css": "./dist/index.css"
+  }
+}
