@@ -1,8 +1,21 @@
 {
   "name": "@kiwi/tokens",
   "private": true,
+  "type": "module",
   "exports": {
     ".": "./dist/index.css",
-    "./index.css": "./dist/index.css"
+    "./index.css": "./dist/index.css",
+    "./native": "./dist/native.css",
+    "./native.css": "./dist/native.css",
+    "./theme": {
+      "types": "./theme.ts",
+      "react-native": "./theme.ts",
+      "default": "./theme.ts"
+    },
+    "./typography.css": "./dist/typography.css",
+    "./themes/light.css": "./dist/themes/light.css",
+    "./themes/dark.css": "./dist/themes/dark.css",
+    "./themes/tokens.css": "./dist/themes/tokens.css",
+    "./themes/web.css": "./dist/themes/web.css"
   }
 }

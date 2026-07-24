@@ -1,6 +1,4 @@
-@import "./light.css";
-@import "./dark.css";
-
+/* Shared Tailwind v4 theme bridge: palette primitives → utilities + semantic aliases */
 @theme inline {
   /* Primary */
   --color-primary: var(--primary);
@@ -62,4 +60,37 @@
   /* Utility */
   --color-shadow: var(--shadow);
   --color-scrim: var(--scrim);
+
+  /* Semantic tokens (mapped to palette) */
+  --color-background: var(--surface);
+  --color-foreground: var(--on-surface);
+  --color-card: var(--surface-container-lowest);
+  --color-card-foreground: var(--on-surface);
+  --color-popover: var(--surface-container-low);
+  --color-popover-foreground: var(--on-surface);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary: var(--secondary-container);
+  --color-secondary-foreground: var(--on-secondary-container);
+  --color-muted: var(--surface-container);
+  --color-muted-foreground: var(--on-surface-variant);
+  --color-accent: var(--tertiary-container);
+  --color-accent-foreground: var(--on-tertiary-container);
+  --color-destructive: var(--error);
+  --color-border: var(--outline-variant);
+  --color-input: var(--outline-variant);
+  --color-ring: var(--primary);
+  --color-chart-1: var(--primary);
+  --color-chart-2: var(--secondary-fixed-dim);
+  --color-chart-3: var(--tertiary);
+  --color-chart-4: var(--error);
+  --color-chart-5: var(--outline);
+  --color-sidebar: var(--surface-container-low);
+  --color-sidebar-foreground: var(--on-surface);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--on-primary);
+  --color-sidebar-accent: var(--tertiary-container);
+  --color-sidebar-accent-foreground: var(--on-tertiary-container);
+  --color-sidebar-border: var(--outline-variant);
+  --color-sidebar-ring: var(--primary);
 }

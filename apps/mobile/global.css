@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "uniwind";
+@import "tw-animate-css";
+@import "@kiwi/tokens/native";
+@import "@kiwi/tokens/typography.css";
+
+@theme {
+  --font-geist-sans: "Geist_400Regular";
+  --font-geist-mono: "GeistMono_400Regular";
+  --font-sans: "Geist_400Regular";
+  --font-mono: "GeistMono_400Regular";
+  --font-medium: "Geist_500Medium";
+  --font-semibold: "Geist_600SemiBold";
+  --font-bold: "Geist_700Bold";
+  --font-extrabold: "Geist_800ExtraBold";
+
+  --radius: 10px;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --spacing-hairline: hairlineWidth();
+}
