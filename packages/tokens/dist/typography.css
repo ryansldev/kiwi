@@ -1,8 +1,9 @@
 :root {
-  --font-sans: var(--font-geist-sans), sans-serif;
-  --font-mono: var(--font-geist-mono), monospace;
-  --font-brand: var(--font-sans);
-  --font-plain: var(--font-sans);
+  /* Apps set --font-geist-* via next/font or expo-font face names */
+  --font-family-sans: var(--font-geist-sans), "Geist", sans-serif;
+  --font-family-mono: var(--font-geist-mono), "Geist Mono", ui-monospace, monospace;
+  --font-brand: var(--font-family-sans);
+  --font-plain: var(--font-family-sans);
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -112,4 +113,9 @@
   --font-label-small-size: 0.6875rem;
   --font-label-small-line-height: 1rem;
   --font-label-small-tracking: 0.03125rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
 }
