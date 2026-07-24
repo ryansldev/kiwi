@@ -118,4 +118,86 @@
 @theme inline {
   --font-sans: var(--font-family-sans);
   --font-mono: var(--font-family-mono);
+
+  /* Type scale → text-* utilities */
+  --text-display-large: var(--font-display-large-size);
+  --text-display-large--line-height: var(--font-display-large-line-height);
+  --text-display-large--letter-spacing: var(--font-display-large-tracking);
+  --text-display-large--font-weight: var(--font-display-large-weight);
+
+  --text-display-medium: var(--font-display-medium-size);
+  --text-display-medium--line-height: var(--font-display-medium-line-height);
+  --text-display-medium--letter-spacing: var(--font-display-medium-tracking);
+  --text-display-medium--font-weight: var(--font-display-medium-weight);
+
+  --text-display-small: var(--font-display-small-size);
+  --text-display-small--line-height: var(--font-display-small-line-height);
+  --text-display-small--letter-spacing: var(--font-display-small-tracking);
+  --text-display-small--font-weight: var(--font-display-small-weight);
+
+  --text-headline-large: var(--font-headline-large-size);
+  --text-headline-large--line-height: var(--font-headline-large-line-height);
+  --text-headline-large--letter-spacing: var(--font-headline-large-tracking);
+  --text-headline-large--font-weight: var(--font-headline-large-weight);
+
+  --text-headline-medium: var(--font-headline-medium-size);
+  --text-headline-medium--line-height: var(--font-headline-medium-line-height);
+  --text-headline-medium--letter-spacing: var(--font-headline-medium-tracking);
+  --text-headline-medium--font-weight: var(--font-headline-medium-weight);
+
+  --text-headline-small: var(--font-headline-small-size);
+  --text-headline-small--line-height: var(--font-headline-small-line-height);
+  --text-headline-small--letter-spacing: var(--font-headline-small-tracking);
+  --text-headline-small--font-weight: var(--font-headline-small-weight);
+
+  --text-title-large: var(--font-title-large-size);
+  --text-title-large--line-height: var(--font-title-large-line-height);
+  --text-title-large--letter-spacing: var(--font-title-large-tracking);
+  --text-title-large--font-weight: var(--font-title-large-weight);
+
+  --text-title-medium: var(--font-title-medium-size);
+  --text-title-medium--line-height: var(--font-title-medium-line-height);
+  --text-title-medium--letter-spacing: var(--font-title-medium-tracking);
+  --text-title-medium--font-weight: var(--font-title-medium-weight);
+
+  --text-title-small: var(--font-title-small-size);
+  --text-title-small--line-height: var(--font-title-small-line-height);
+  --text-title-small--letter-spacing: var(--font-title-small-tracking);
+  --text-title-small--font-weight: var(--font-title-small-weight);
+
+  --text-body-large: var(--font-body-large-size);
+  --text-body-large--line-height: var(--font-body-large-line-height);
+  --text-body-large--letter-spacing: var(--font-body-large-tracking);
+  --text-body-large--font-weight: var(--font-body-large-weight);
+
+  --text-body-medium: var(--font-body-medium-size);
+  --text-body-medium--line-height: var(--font-body-medium-line-height);
+  --text-body-medium--letter-spacing: var(--font-body-medium-tracking);
+  --text-body-medium--font-weight: var(--font-body-medium-weight);
+
+  --text-body-small: var(--font-body-small-size);
+  --text-body-small--line-height: var(--font-body-small-line-height);
+  --text-body-small--letter-spacing: var(--font-body-small-tracking);
+  --text-body-small--font-weight: var(--font-body-small-weight);
+
+  --text-label-large: var(--font-label-large-size);
+  --text-label-large--line-height: var(--font-label-large-line-height);
+  --text-label-large--letter-spacing: var(--font-label-large-tracking);
+  --text-label-large--font-weight: var(--font-label-large-weight);
+
+  --text-label-medium: var(--font-label-medium-size);
+  --text-label-medium--line-height: var(--font-label-medium-line-height);
+  --text-label-medium--letter-spacing: var(--font-label-medium-tracking);
+  --text-label-medium--font-weight: var(--font-label-medium-weight);
+
+  --text-label-small: var(--font-label-small-size);
+  --text-label-small--line-height: var(--font-label-small-line-height);
+  --text-label-small--letter-spacing: var(--font-label-small-tracking);
+  --text-label-small--font-weight: var(--font-label-small-weight);
+}
+
+@layer base {
+  html {
+    @apply font-sans text-body-large;
+  }
 }

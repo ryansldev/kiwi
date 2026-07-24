@@ -12,7 +12,7 @@ const LOGO = {
 };
 
 const SCREEN_OPTIONS = {
-  title: <Text>React Native Reusables</Text>,
+  headerTitle: () => <Text>React Native Reusables</Text>,
   headerTransparent: true,
   headerRight: () => <ThemeToggle />,
 };
@@ -31,10 +31,10 @@ export default function Screen() {
       <View className="flex-1 items-center justify-center gap-8 p-4">
         <Image source={LOGO[theme ?? 'light']} style={IMAGE_STYLE} resizeMode="contain" />
         <View className="gap-2 p-4">
-          <Text className="ios:text-foreground text-muted-foreground font-mono text-sm">
+          <Text className="ios:text-foreground text-muted-foreground font-mono text-body-medium">
             1. Edit <Text variant="code">app/index.tsx</Text> to get started.
           </Text>
-          <Text className="ios:text-foreground text-muted-foreground font-mono text-sm">
+          <Text className="ios:text-foreground text-muted-foreground font-mono text-body-medium">
             2. Save to see your changes instantly.
           </Text>
         </View>

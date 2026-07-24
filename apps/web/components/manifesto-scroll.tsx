@@ -138,69 +138,71 @@ export function ManifestoScroll({
       aria-label="Manifesto Kiwi"
     >
       <div className="sticky top-0 flex h-svh items-center">
-        <div className="relative mx-auto w-full max-w-5xl px-6 sm:px-10 lg:px-12">
-          <Logo />
+        <div className="relative mx-auto w-full max-w-5xl px-4 sm:px-6">
+          <div className="flex flex-col gap-8 sm:gap-10">
+            <Logo />
 
-          <div className="relative mt-8 sm:mt-10">
-            {PUNCHLINES.map((line, index) => {
-              const opacity = opacityFor(index);
+            <div className="relative">
+              {PUNCHLINES.map((line, index) => {
+                const opacity = opacityFor(index);
 
-              return (
-                <p
-                  key={line}
-                  className="absolute top-0 left-0 max-w-3xl text-4xl leading-[1.2] font-bold tracking-tight sm:text-5xl sm:leading-[1.18] md:text-6xl md:leading-[1.15]"
-                  style={{
-                    opacity,
-                    transform: `translateY(${(1 - opacity) * 12}px)`,
-                    willChange: "opacity, transform",
-                  }}
-                  aria-hidden={opacity < 0.15}
+                return (
+                  <p
+                    key={line}
+                    className="absolute top-0 left-0 max-w-3xl text-display-small sm:text-display-medium md:text-display-large"
+                    style={{
+                      opacity,
+                      transform: `translateY(${(1 - opacity) * 12}px)`,
+                      willChange: "opacity, transform",
+                    }}
+                    aria-hidden={opacity < 0.15}
+                  >
+                    {line}
+                  </p>
+                );
+              })}
+              <p className="invisible max-w-3xl text-display-small sm:text-display-medium md:text-display-large">
+                {PUNCHLINES[6]}
+              </p>
+
+              <div
+                className="absolute top-full left-0 mt-6 flex flex-wrap items-center gap-2"
+                style={{
+                  opacity: ctaOpacity,
+                  transform: `translateY(${(1 - ctaOpacity) * 8}px)`,
+                  pointerEvents: ctaOpacity > 0.5 ? "auto" : "none",
+                }}
+              >
+                <Button
+                  size="lg"
+                  nativeButton={false}
+                  tabIndex={ctaOpacity > 0.5 ? 0 : -1}
+                  render={
+                    <Link
+                      href={discordUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  }
                 >
-                  {line}
-                </p>
-              );
-            })}
-            <p className="invisible max-w-3xl text-4xl leading-[1.2] font-bold tracking-tight sm:text-5xl sm:leading-[1.18] md:text-6xl md:leading-[1.15]">
-              {PUNCHLINES[6]}
-            </p>
-
-            <div
-              className="absolute top-[calc(100%+1.25rem)] left-0 flex flex-wrap items-center gap-3"
-              style={{
-                opacity: ctaOpacity,
-                transform: `translateY(${(1 - ctaOpacity) * 8}px)`,
-                pointerEvents: ctaOpacity > 0.5 ? "auto" : "none",
-              }}
-            >
-              <Button
-                size="lg"
-                nativeButton={false}
-                tabIndex={ctaOpacity > 0.5 ? 0 : -1}
-                render={
-                  <Link
-                    href={discordUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
-              >
-                Entrar na comunidade
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                nativeButton={false}
-                tabIndex={ctaOpacity > 0.5 ? 0 : -1}
-                render={
-                  <Link
-                    href={githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
-              >
-                Ver no GitHub
-              </Button>
+                  Entrar na comunidade
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  nativeButton={false}
+                  tabIndex={ctaOpacity > 0.5 ? 0 : -1}
+                  render={
+                    <Link
+                      href={githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  }
+                >
+                  Ver no GitHub
+                </Button>
+              </div>
             </div>
           </div>
         </div>
