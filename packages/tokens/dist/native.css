@@ -1,0 +1,285 @@
+/*
+ * Uniwind entry: define color primitives + --color-* roles per theme.
+ * Keep @variant blocks in sync with themes/light.css and themes/dark.css.
+ */
+@layer theme {
+  :root {
+    @variant light {
+      /* Primary — sync with themes/light.css */
+      --primary: oklch(0.476 0.119 124.531);
+      --on-primary: oklch(1 0 0);
+      --primary-container: oklch(0.9 0.199 124.009);
+      --on-primary-container: oklch(0.221 0.056 125.017);
+      --primary-fixed: oklch(0.9 0.199 124.009);
+      --on-primary-fixed: oklch(0.221 0.056 125.017);
+      --primary-fixed-dim: oklch(0.814 0.193 124.34);
+      --on-primary-fixed-variant: oklch(0.39 0.097 124.246);
+
+      /* Secondary */
+      --secondary: oklch(0.477 0.112 119.331);
+      --on-secondary: oklch(1 0 0);
+      --secondary-container: oklch(0.905 0.14 117.59);
+      --on-secondary-container: oklch(0.221 0.052 119.723);
+      --secondary-fixed: oklch(0.905 0.14 117.59);
+      --on-secondary-fixed: oklch(0.221 0.052 119.723);
+      --secondary-fixed-dim: oklch(0.82 0.137 118.171);
+      --on-secondary-fixed-variant: oklch(0.392 0.093 119.524);
+
+      /* Tertiary */
+      --tertiary: oklch(0.496 0.124 38.592);
+      --on-tertiary: oklch(1 0 0);
+      --tertiary-container: oklch(0.919 0.043 37.6);
+      --on-tertiary-container: oklch(0.231 0.076 37.803);
+      --tertiary-fixed: oklch(0.919 0.043 37.6);
+      --on-tertiary-fixed: oklch(0.231 0.076 37.803);
+      --tertiary-fixed-dim: oklch(0.837 0.093 38.695);
+      --on-tertiary-fixed-variant: oklch(0.41 0.115 38.783);
+
+      /* Error */
+      --error: oklch(0.506 0.193 27.694);
+      --on-error: oklch(1 0 0);
+      --error-container: oklch(0.918 0.042 25.137);
+      --on-error-container: oklch(0.236 0.096 27.184);
+
+      /* Surface */
+      --surface: oklch(0.99 0.011 95.258);
+      --surface-dim: oklch(0.887 0.011 100.968);
+      --surface-bright: oklch(0.981 0.011 95.259);
+      --surface-container-lowest: oklch(1 0 0);
+      --surface-container-low: oklch(0.966 0.011 100.963);
+      --surface-container: oklch(0.948 0.011 95.26);
+      --surface-container-high: oklch(0.93 0.011 95.261);
+      --surface-container-highest: oklch(0.914 0.011 100.966);
+      --on-surface: oklch(0.223 0.01 116.429);
+      --on-surface-variant: oklch(0.395 0.02 118.787);
+
+      /* Outline */
+      --outline: oklch(0.567 0.02 114.202);
+      --outline-variant: oklch(0.827 0.022 112.753);
+
+      /* Inverse */
+      --inverse-surface: oklch(0.31 0.009 116.199);
+      --inverse-on-surface: oklch(0.957 0.011 100.963);
+      --inverse-primary: oklch(0.814 0.193 124.34);
+
+      /* Utility */
+      --shadow: oklch(0 0 0);
+      --scrim: oklch(0 0 0);
+
+      /* Color roles */
+      --color-primary: var(--primary);
+      --color-on-primary: var(--on-primary);
+      --color-primary-container: var(--primary-container);
+      --color-on-primary-container: var(--on-primary-container);
+      --color-primary-fixed: var(--primary-fixed);
+      --color-on-primary-fixed: var(--on-primary-fixed);
+      --color-primary-fixed-dim: var(--primary-fixed-dim);
+      --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+      --color-secondary: var(--secondary-container);
+      --color-on-secondary: var(--on-secondary);
+      --color-secondary-container: var(--secondary-container);
+      --color-on-secondary-container: var(--on-secondary-container);
+      --color-secondary-fixed: var(--secondary-fixed);
+      --color-on-secondary-fixed: var(--on-secondary-fixed);
+      --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+      --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+      --color-secondary-foreground: var(--on-secondary-container);
+      --color-tertiary: var(--tertiary);
+      --color-on-tertiary: var(--on-tertiary);
+      --color-tertiary-container: var(--tertiary-container);
+      --color-on-tertiary-container: var(--on-tertiary-container);
+      --color-tertiary-fixed: var(--tertiary-fixed);
+      --color-on-tertiary-fixed: var(--on-tertiary-fixed);
+      --color-tertiary-fixed-dim: var(--tertiary-fixed-dim);
+      --color-on-tertiary-fixed-variant: var(--on-tertiary-fixed-variant);
+      --color-error: var(--error);
+      --color-on-error: var(--on-error);
+      --color-error-container: var(--error-container);
+      --color-on-error-container: var(--on-error-container);
+      --color-surface: var(--surface);
+      --color-surface-dim: var(--surface-dim);
+      --color-surface-bright: var(--surface-bright);
+      --color-surface-container-lowest: var(--surface-container-lowest);
+      --color-surface-container-low: var(--surface-container-low);
+      --color-surface-container: var(--surface-container);
+      --color-surface-container-high: var(--surface-container-high);
+      --color-surface-container-highest: var(--surface-container-highest);
+      --color-on-surface: var(--on-surface);
+      --color-on-surface-variant: var(--on-surface-variant);
+      --color-outline: var(--outline);
+      --color-outline-variant: var(--outline-variant);
+      --color-inverse-surface: var(--inverse-surface);
+      --color-inverse-on-surface: var(--inverse-on-surface);
+      --color-inverse-primary: var(--inverse-primary);
+      --color-shadow: var(--shadow);
+      --color-scrim: var(--scrim);
+      --color-background: var(--surface);
+      --color-foreground: var(--on-surface);
+      --color-card: var(--surface-container-lowest);
+      --color-card-foreground: var(--on-surface);
+      --color-popover: var(--surface-container-low);
+      --color-popover-foreground: var(--on-surface);
+      --color-primary-foreground: var(--on-primary);
+      --color-muted: var(--surface-container);
+      --color-muted-foreground: var(--on-surface-variant);
+      --color-accent: var(--tertiary-container);
+      --color-accent-foreground: var(--on-tertiary-container);
+      --color-destructive: var(--error);
+      --color-border: var(--outline-variant);
+      --color-input: var(--outline-variant);
+      --color-ring: var(--primary);
+      --color-chart-1: var(--primary);
+      --color-chart-2: var(--secondary-fixed-dim);
+      --color-chart-3: var(--tertiary);
+      --color-chart-4: var(--error);
+      --color-chart-5: var(--outline);
+      --color-sidebar: var(--surface-container-low);
+      --color-sidebar-foreground: var(--on-surface);
+      --color-sidebar-primary: var(--primary);
+      --color-sidebar-primary-foreground: var(--on-primary);
+      --color-sidebar-accent: var(--tertiary-container);
+      --color-sidebar-accent-foreground: var(--on-tertiary-container);
+      --color-sidebar-border: var(--outline-variant);
+      --color-sidebar-ring: var(--primary);
+    }
+
+    @variant dark {
+      /* Primary — sync with themes/dark.css */
+      --primary: oklch(0.814 0.193 124.34);
+      --on-primary: oklch(0.305 0.076 124.254);
+      --primary-container: oklch(0.39 0.097 124.246);
+      --on-primary-container: oklch(0.9 0.199 124.009);
+      --primary-fixed: oklch(0.9 0.199 124.009);
+      --on-primary-fixed: oklch(0.221 0.056 125.017);
+      --primary-fixed-dim: oklch(0.814 0.193 124.34);
+      --on-primary-fixed-variant: oklch(0.39 0.097 124.246);
+
+      /* Secondary */
+      --secondary: oklch(0.82 0.137 118.171);
+      --on-secondary: oklch(0.306 0.072 119.725);
+      --secondary-container: oklch(0.392 0.093 119.524);
+      --on-secondary-container: oklch(0.905 0.14 117.59);
+      --secondary-fixed: oklch(0.905 0.14 117.59);
+      --on-secondary-fixed: oklch(0.221 0.052 119.723);
+      --secondary-fixed-dim: oklch(0.82 0.137 118.171);
+      --on-secondary-fixed-variant: oklch(0.392 0.093 119.524);
+
+      /* Tertiary */
+      --tertiary: oklch(0.837 0.093 38.695);
+      --on-tertiary: oklch(0.322 0.105 37.983);
+      --tertiary-container: oklch(0.41 0.115 38.783);
+      --on-tertiary-container: oklch(0.919 0.043 37.6);
+      --tertiary-fixed: oklch(0.919 0.043 37.6);
+      --on-tertiary-fixed: oklch(0.231 0.076 37.803);
+      --tertiary-fixed-dim: oklch(0.837 0.093 38.695);
+      --on-tertiary-fixed-variant: oklch(0.41 0.115 38.783);
+
+      /* Error */
+      --error: oklch(0.838 0.089 26.722);
+      --on-error: oklch(0.328 0.134 27.313);
+      --error-container: oklch(0.417 0.17 27.372);
+      --on-error-container: oklch(0.918 0.042 25.137);
+
+      /* Surface */
+      --surface: oklch(0.223 0.01 116.429);
+      --surface-dim: oklch(0.188 0.01 116.603);
+      --surface-bright: oklch(0.345 0.01 114.709);
+      --surface-container-lowest: oklch(0.165 0.01 116.768);
+      --surface-container-low: oklch(0.223 0.01 116.429);
+      --surface-container: oklch(0.241 0.009 116.367);
+      --surface-container-high: oklch(0.283 0.009 107.022);
+      --surface-container-highest: oklch(0.326 0.009 116.173);
+      --on-surface: oklch(0.914 0.011 100.966);
+      --on-surface-variant: oklch(0.827 0.022 112.753);
+
+      /* Outline */
+      --outline: oklch(0.654 0.02 113.644);
+      --outline-variant: oklch(0.395 0.02 118.787);
+
+      /* Inverse */
+      --inverse-surface: oklch(0.914 0.011 100.966);
+      --inverse-on-surface: oklch(0.31 0.009 116.199);
+      --inverse-primary: oklch(0.476 0.119 124.531);
+
+      /* Utility */
+      --shadow: oklch(0 0 0);
+      --scrim: oklch(0 0 0);
+
+      /* Color roles */
+      --color-primary: var(--primary);
+      --color-on-primary: var(--on-primary);
+      --color-primary-container: var(--primary-container);
+      --color-on-primary-container: var(--on-primary-container);
+      --color-primary-fixed: var(--primary-fixed);
+      --color-on-primary-fixed: var(--on-primary-fixed);
+      --color-primary-fixed-dim: var(--primary-fixed-dim);
+      --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+      --color-secondary: var(--secondary-container);
+      --color-on-secondary: var(--on-secondary);
+      --color-secondary-container: var(--secondary-container);
+      --color-on-secondary-container: var(--on-secondary-container);
+      --color-secondary-fixed: var(--secondary-fixed);
+      --color-on-secondary-fixed: var(--on-secondary-fixed);
+      --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+      --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+      --color-secondary-foreground: var(--on-secondary-container);
+      --color-tertiary: var(--tertiary);
+      --color-on-tertiary: var(--on-tertiary);
+      --color-tertiary-container: var(--tertiary-container);
+      --color-on-tertiary-container: var(--on-tertiary-container);
+      --color-tertiary-fixed: var(--tertiary-fixed);
+      --color-on-tertiary-fixed: var(--on-tertiary-fixed);
+      --color-tertiary-fixed-dim: var(--tertiary-fixed-dim);
+      --color-on-tertiary-fixed-variant: var(--on-tertiary-fixed-variant);
+      --color-error: var(--error);
+      --color-on-error: var(--on-error);
+      --color-error-container: var(--error-container);
+      --color-on-error-container: var(--on-error-container);
+      --color-surface: var(--surface);
+      --color-surface-dim: var(--surface-dim);
+      --color-surface-bright: var(--surface-bright);
+      --color-surface-container-lowest: var(--surface-container-lowest);
+      --color-surface-container-low: var(--surface-container-low);
+      --color-surface-container: var(--surface-container);
+      --color-surface-container-high: var(--surface-container-high);
+      --color-surface-container-highest: var(--surface-container-highest);
+      --color-on-surface: var(--on-surface);
+      --color-on-surface-variant: var(--on-surface-variant);
+      --color-outline: var(--outline);
+      --color-outline-variant: var(--outline-variant);
+      --color-inverse-surface: var(--inverse-surface);
+      --color-inverse-on-surface: var(--inverse-on-surface);
+      --color-inverse-primary: var(--inverse-primary);
+      --color-shadow: var(--shadow);
+      --color-scrim: var(--scrim);
+      --color-background: var(--surface);
+      --color-foreground: var(--on-surface);
+      --color-card: var(--surface-container-lowest);
+      --color-card-foreground: var(--on-surface);
+      --color-popover: var(--surface-container-low);
+      --color-popover-foreground: var(--on-surface);
+      --color-primary-foreground: var(--on-primary);
+      --color-muted: var(--surface-container);
+      --color-muted-foreground: var(--on-surface-variant);
+      --color-accent: var(--tertiary-container);
+      --color-accent-foreground: var(--on-tertiary-container);
+      --color-destructive: var(--error);
+      --color-border: var(--outline-variant);
+      --color-input: var(--outline-variant);
+      --color-ring: var(--primary);
+      --color-chart-1: var(--primary);
+      --color-chart-2: var(--secondary-fixed-dim);
+      --color-chart-3: var(--tertiary);
+      --color-chart-4: var(--error);
+      --color-chart-5: var(--outline);
+      --color-sidebar: var(--surface-container-low);
+      --color-sidebar-foreground: var(--on-surface);
+      --color-sidebar-primary: var(--primary);
+      --color-sidebar-primary-foreground: var(--on-primary);
+      --color-sidebar-accent: var(--tertiary-container);
+      --color-sidebar-accent-foreground: var(--on-tertiary-container);
+      --color-sidebar-border: var(--outline-variant);
+      --color-sidebar-ring: var(--primary);
+    }
+  }
+}

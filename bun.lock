@@ -27,6 +27,7 @@
       "name": "minimal",
       "version": "1.0.0",
       "dependencies": {
+        "@kiwi/tokens": "workspace:*",
         "@rn-primitives/accordion": "^1.5.2",
         "@rn-primitives/alert-dialog": "^1.5.2",
         "@rn-primitives/aspect-ratio": "^1.5.2",
@@ -94,7 +95,7 @@
       "version": "0.1.0",
       "dependencies": {
         "@base-ui/react": "^1.6.0",
-        "@kiwi/tokens": "workspace:tokens",
+        "@kiwi/tokens": "workspace:*",
         "better-auth": "^1.6.24",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",

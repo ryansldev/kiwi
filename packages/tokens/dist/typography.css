@@ -1,6 +1,6 @@
 :root {
-  --font-sans: "Geist Sans", sans-serif;
-  --font-mono: "Geist Mono", monospace;
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
   --font-brand: var(--font-sans);
   --font-plain: var(--font-sans);
 
